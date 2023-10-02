@@ -99,8 +99,8 @@ export default function OneOnOneMeeting() {
     >
       <Header />
       <EuiFlexGroup justifyContent="center" alignItems="center">
-        <EuiForm>
-          <MeetingNameField
+        <EuiForm style={{color:"#B81D67"}}>
+          <MeetingNameField 
             label="Meeting name"
             isInvalid={showErrors.meetingName.show}
             error={showErrors.meetingName.message}

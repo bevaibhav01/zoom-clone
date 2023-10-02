@@ -24,7 +24,7 @@ function Dashboard() {
         <EuiFlexGroup
           justifyContent="center"
           alignItems="center"
-          style={{ margin: "5vh 10vw" }}
+          style={{ margin: "5vh 10vw",color:"#B81D67"}}
         >
           <EuiFlexItem>
             <EuiCard

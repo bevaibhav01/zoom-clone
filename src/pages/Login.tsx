@@ -66,16 +66,16 @@ function Login() {
                 <EuiImage src={animation} alt="logo" />
               </EuiFlexItem>
               <EuiFlexItem>
-                <EuiImage src={logo} alt="logo" size="230px" />
+                <h1 style={{fontFamily:"Titan One", marginLeft:"70px",fontSize:"100px"}}>SEENG</h1>
                 <EuiSpacer size="xs" />
                 <EuiText textAlign="center" grow={false}>
                   <h3>
                     <EuiTextColor>One Platform to</EuiTextColor>
-                    <EuiTextColor color="#0b5cff"> connect</EuiTextColor>
+                    <EuiTextColor color="#B81D67"> connect</EuiTextColor>
                   </h3>
                 </EuiText>
-                <EuiSpacer size="l" />
-                <EuiButton fill onClick={login}>
+                <EuiSpacer size="l" style={{color:"#B81D67"}}/>
+                <EuiButton fill onClick={login} style={{ backgroundColor: '#B81D67' }} >
                   Login with Google
                 </EuiButton>
               </EuiFlexItem>

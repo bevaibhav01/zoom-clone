@@ -67,8 +67,8 @@ export default function Header() {
       items: [
         <Link to="/">
           <EuiText>
-            <h2 style={{ padding: "0 1vw" }}>
-              <EuiTextColor color="#0b5cff">Zoom</EuiTextColor>
+            <h2 style={{ padding: "0 1vw", fontFamily:"Titan One" , fontWeight:"600" ,color:"#B81D67"}}>
+              SEENG
             </h2>
           </EuiText>
         </Link>,
@@ -81,7 +81,7 @@ export default function Header() {
             <EuiText>
               <h3>
                 <EuiTextColor color="white">Hello, </EuiTextColor>
-                <EuiTextColor color="#0b5cff">{userName}</EuiTextColor>
+                <EuiTextColor color="#B81D67">{userName}</EuiTextColor>
               </h3>
             </EuiText>
           ) : null}
@@ -112,8 +112,9 @@ export default function Header() {
                 iconType="moon"
                 display="fill"
                 size="s"
-                color="ghost"
+               
                 aria-label="theme-button-dark"
+                style={{backgroundColor:"#B81D67"}}
               />
             )}
           </EuiFlexItem>
@@ -124,6 +125,7 @@ export default function Header() {
               display="fill"
               size="s"
               aria-label="logout-button"
+              style={{backgroundColor:"#B81D67"}}
             />
           </EuiFlexItem>
         </EuiFlexGroup>,

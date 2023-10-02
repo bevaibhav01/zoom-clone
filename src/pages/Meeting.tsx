@@ -73,10 +73,10 @@ export default function Meeting() {
         if (meeting.status) {
           if (meeting.meetingDate === moment().format("L")) {
             return (
-              <EuiBadge color="success">
+              <EuiBadge color="black">
                 <Link
                   to={`/join/${meeting.meetingId}`}
-                  style={{ color: "black" }}
+                  style={{ color: "#B81D67",backgroundColor:"black" }}
                 >
                   Join Now
                 </Link>
@@ -85,11 +85,11 @@ export default function Meeting() {
           } else if (
             moment(meeting.meetingDate).isBefore(moment().format("L"))
           ) {
-            return <EuiBadge color="default">Ended</EuiBadge>;
+            return <EuiBadge color="#B81D67">Ended</EuiBadge>;
           } else if (moment(meeting.meetingDate).isAfter()) {
-            return <EuiBadge color="primary">Upcoming</EuiBadge>;
+            return <EuiBadge color="#B81D67">Upcoming</EuiBadge>;
           }
-        } else return <EuiBadge color="danger">Cancelled</EuiBadge>;
+        } else return <EuiBadge color="#B81D67">Cancelled</EuiBadge>;
       },
     },
     {
